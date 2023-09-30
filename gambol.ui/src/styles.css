@@ -1,0 +1,132 @@
+body,
+html {
+  background-color: black;
+  color: white;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  user-select: none;
+  animation-name: bodyani;
+  animation-duration: 0.5s;
+}
+@-webkit-keyframes bodyani {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes bodyani {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ecf0f1;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ecf0f1;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ecf0f1;
+}
+
+.inputw {
+  padding: 10px 10px;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid white;
+  width: 300px;
+}
+
+.btn {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.btn:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.btni {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #1a003f;
+  color: white;
+  border: 2px solid #1a003f;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.btni:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+@media screen and (max-width: 1000px) {
+  .btni {
+    padding: 5px 10px;
+    font-size: 0.8em;
+  }
+}
+.link {
+  padding: 1px 1px;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+  color: white;
+  text-decoration: none;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  padding-bottom: 10px;
+  position: fixed;
+}

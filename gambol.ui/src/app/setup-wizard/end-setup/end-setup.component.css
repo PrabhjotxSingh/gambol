@@ -1,0 +1,11 @@
+.splash_container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  background-image: url("../../../assets/end-setup.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
