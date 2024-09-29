@@ -7,10 +7,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./welcome-splash.component.css'],
 })
 export class WelcomeSplashComponent {
+  setupComplete: boolean = Boolean(localStorage.getItem('setupComplete'));
+
   constructor(private router: Router) {}
   ngOnInit() {
     setTimeout(() => {
-      this.router.navigate(['/setup-wizard/start-setup']);
+      if (this.setupComplete == true) {
+        this.router.navigate(['/home']);
+      } else {
+        this.router.navigate(['/setup-wizard/start-setup']);
+      }
     }, 5000);
   }
 }

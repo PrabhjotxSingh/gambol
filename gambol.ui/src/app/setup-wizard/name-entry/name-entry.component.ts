@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
 })
 export class NameEntryComponent {
   userName: string = '';
-  recalledName: string | null = '';
 
   constructor(private router: Router) {}
 
@@ -23,7 +22,7 @@ export class NameEntryComponent {
         confirmButtonColor: '#000',
       });
     } else {
-      console.log('Save logic');
+      localStorage.setItem('userName', this.userName);
       this.router.navigate(['setup-wizard/color-entry/']);
     }
   }
